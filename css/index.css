@@ -321,11 +321,12 @@ img {
   text-align: center;
   font-size: 1.6rem;
   max-width: 200px;
+  width: 100%;
 }
 .home .content-pick .destination .btn:hover {
   background-color: #1ab6cf;
 }
-.home .content-pick .destination .btn:focus ~ form {
+.home .content-pick .destination .btn:hover ~ form {
   display: block;
 }
 .home .content-pick .destination form {
@@ -333,22 +334,24 @@ img {
   width: 100%;
   padding-right: 20px;
 }
-.home .content-pick .destination form:active {
+.home .content-pick .destination form:hover {
   display: block;
 }
 .home .content-pick .destination form input {
-  width: 100%;
+  width: 90%;
   padding: 5px 10px;
   margin: 5px 0;
   font-size: 1.6rem;
   border: 4px solid #C0C0C0;
+  border-radius: 4px;
 }
 .home .content-pick .destination form textarea {
   padding: 5px 10px;
-  width: 100%;
+  width: 90%;
   font-size: 1.6rem;
   border: 4px solid #C0C0C0;
-  height: 30px;
+  max-height: 80px;
+  border-radius: 4px;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {

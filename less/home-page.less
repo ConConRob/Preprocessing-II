@@ -79,7 +79,8 @@
       
       .btn {
         .button();
-        &:focus~form{
+        width: 100%;
+        &:hover~form{
           display: block;
       }
       }
@@ -87,22 +88,24 @@
         display: none;
         width:100%;
         padding-right: 20px;
-        &:active {
+        &:hover {
           display: block;
         }
         input {
-          width: 100%;
+          width: 90%;
           padding: 5px 10px;
           margin: 5px 0;
           font-size: 1.6rem;
           border : 4px solid @navigation-border;
+          border-radius: 4px;
         }
         textarea {
           padding: 5px 10px;
-          width: 100%;
+          width: 90%;
           font-size: 1.6rem;
           border : 4px solid @navigation-border;
-          height: 30px;
+          max-height: 80px;
+          border-radius: 4px;
         }
 
       }
