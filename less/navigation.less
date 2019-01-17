@@ -7,19 +7,37 @@
     align-items: baseline;
     padding-top: 15px;
     padding-bottom: 20px;
+    @media @mobile {
+        padding-bottom: 0;
+    }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 3.2rem;
+            }
+        }
     }
+
+   
     nav {
         display: flex;
         justify-content: space-evenly;
         width: 44%;
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
         a{
             color: @font-color;
             text-decoration: none;
             font-size: 1.6rem;
         }
+        
     }
 }
