@@ -71,12 +71,29 @@
       flex-direction: column;
       margin: 0 auto;
     }
-    .btn {
-      .button();
-    }
+    
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      .btn {
+        .button();
+        &:hover~form{
+          display: block;
+      }
+      }
+      form{
+        display: none;
+        width:100%;
+        &:hover {
+          display: block;
+        }
+        input {
+          width: 100%;
+        }
+
+      }
       @media @mobile {
         width: 80%;
         margin: 0 auto;

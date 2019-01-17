@@ -309,7 +309,11 @@ img {
     margin: 0 auto;
   }
 }
-.home .content-pick .btn {
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
   border-radius: 15px;
   color: #FFFFFF;
   background-color: #148ea1;
@@ -318,12 +322,21 @@ img {
   font-size: 1.6rem;
   max-width: 200px;
 }
-.home .content-pick .btn:hover {
+.home .content-pick .destination .btn:hover {
   background-color: #1ab6cf;
 }
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
+.home .content-pick .destination .btn:hover ~ form {
+  display: block;
+}
+.home .content-pick .destination form {
+  display: none;
+  width: 100%;
+}
+.home .content-pick .destination form:hover {
+  display: block;
+}
+.home .content-pick .destination form input {
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
