@@ -76,18 +76,28 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      
+      @media @mobile {
+        h4 {
+          padding-top: 30px;
+        }
+        &:first-of-type {
+          padding-top: 0;
+        }
+      }
       .btn {
         .button();
         width: 100%;
         &:hover~form{
           display: block;
-      }
+        }
       }
       form{
         display: none;
         width:100%;
         padding-right: 20px;
+        @media @mobile {
+          padding-right: 0;
+        }
         &:hover {
           display: block;
         }
@@ -98,6 +108,10 @@
           font-size: 1.6rem;
           border : 4px solid @navigation-border;
           border-radius: 4px;
+          @media @mobile {
+            width: 100%;
+          }
+          
         }
         textarea {
           padding: 5px 10px;
@@ -106,6 +120,9 @@
           border : 4px solid @navigation-border;
           max-height: 80px;
           border-radius: 4px;
+          @media @mobile {
+            width: 100%;
+          }
         }
 
       }
@@ -115,7 +132,7 @@
         .btn {
           max-width: 100%;
           font-size: 1.7rem;
-          margin-bottom: 30px;
+          
         }
       }
     }
