@@ -1,10 +1,12 @@
 // Navigation Styles here
 
 .top-banner {
-    border-bottom: 2px dashed gray;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 15px;
+    padding-bottom: 20px;
     .container {
         display: flex;
         justify-content: space-between;
@@ -13,10 +15,11 @@
     nav {
         display: flex;
         justify-content: space-evenly;
-        width: 30%;
+        width: 44%;
         a{
             color: @font-color;
             text-decoration: none;
+            font-size: 1.6rem;
         }
     }
 }

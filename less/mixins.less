@@ -1,9 +1,13 @@
 // Mixins in here
-.button(@radius:13px; @font-color:@main-bg; @bg-color: @button-bg; @x-padding:30px; @y-padding:10px){
+.button(@radius:15px; @font-color:@main-bg; @bg-color: darken(@button-bg,5%); @x-padding:30px; @y-padding:15px){
     border-radius: @radius;
     color: @font-color;
     background-color: @bg-color;
     padding: @y-padding @x-padding;
     text-align: center;
     font-size: 1.6rem;
+    max-width: 200px;
+    &:hover {
+        background-color: lighten(@bg-color, 10%);
+    }
 }
