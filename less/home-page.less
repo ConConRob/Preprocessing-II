@@ -79,18 +79,30 @@
       
       .btn {
         .button();
-        &:hover~form{
+        &:focus~form{
           display: block;
       }
       }
       form{
         display: none;
         width:100%;
-        &:hover {
+        padding-right: 20px;
+        &:active {
           display: block;
         }
         input {
           width: 100%;
+          padding: 5px 10px;
+          margin: 5px 0;
+          font-size: 1.6rem;
+          border : 4px solid @navigation-border;
+        }
+        textarea {
+          padding: 5px 10px;
+          width: 100%;
+          font-size: 1.6rem;
+          border : 4px solid @navigation-border;
+          height: 30px;
         }
 
       }
